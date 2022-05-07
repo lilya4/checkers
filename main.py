@@ -1,6 +1,6 @@
 import pygame
 from sources.game import Game
-from sources.constants import SQUARE_SIZE
+from sources.constants import SQUARE_SIZE, WIDTH, HEIGHT
 
 FPS = 60
 
