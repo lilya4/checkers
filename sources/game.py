@@ -19,7 +19,7 @@ class Game:
         return self.board.winner() is None
 
     def select(self, row, col):
-        if not(self.selected_piece is None) and ((row, col) in self.possible_moves):
+        if (self.selected_piece is not None) and ((row, col) in self.possible_moves):
             self.board.move(self.selected_piece, row, col, self.turn)
             self.selected_piece = None
             self.possible_moves = []

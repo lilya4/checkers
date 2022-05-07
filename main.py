@@ -10,7 +10,7 @@ pygame.display.set_caption('Checkers')
 def main():
     is_running = True
     clock = pygame.time.Clock()
-    game = Game(pygame.display.set_mode((800, 800)))
+    game = Game(pygame.display.set_mode((WIDTH, HEIGHT)))
     while is_running:
         clock.tick(FPS)
         is_running = game.no_winner();
@@ -25,5 +25,5 @@ def main():
         game.update()
     pygame.quit()
 
-
-main()
+if __name__ == "__main__":
+    main()
